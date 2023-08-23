@@ -247,47 +247,6 @@ def extract_bit_plane(image_path, color_channel, bit_plane):
 
     CustomLogger.success(f"Bit Plane Image saved as {output_path}")
 
-# def process_image(image_path):
-    # base, ext = os.path.splitext(image_path)
-
-    # convert_path = shutil.which("convert")
-
-    # if convert_path == None:
-        # CustomLogger.error("'convert' was not found in PATH!\n")
-        # CustomLogger.info("Consider running: 'sudo apt install imagemagick'")
-        # return
-
-
-    # # Extract color planes and negative
-    # for color in ["R", "G", "B"]:
-        # subprocess.check_call(
-            # [
-                # "convert",
-                # image_path,
-                # "-channel",
-                # color,
-                # "-separate",
-                # f"{base}_{color.lower()}{ext}",
-            # ]
-        # )
-        # subprocess.check_call(
-            # [
-                # "convert",
-                # f"{base}_{color.lower()}{ext}",
-                # "-negate",
-                # f"{base}_{color.lower()}_negate{ext}",
-            # ]
-        # )
-
-    # # Create grayscale image
-    # subprocess.check_call(
-        # ["convert", image_path, "-colorspace", "Gray", f"{base}_grayscale{ext}"]
-    # )
-
-    # # Negate all colors
-    # subprocess.check_call(["convert", image_path, "-negate", f"{base}_negate{ext}"])
-
-
 def calculate_entropy(data):
     # Calculate the probability distribution of each byte value
     value, counts = np.unique(np.frombuffer(data, dtype=np.uint8), return_counts=True)

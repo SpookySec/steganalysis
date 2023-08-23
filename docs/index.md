@@ -11,7 +11,10 @@ Explore more about each function and the tool it implements:
 - [run_zsteg](steganalysis/run_zsteg.md)
 - [run_foremost](steganalysis/run_foremost.md)
 - [run_binwalk](steganalysis/run_binwalk.md)
+- [main function](steganalysis/main.md)
 
 The tool also contains a [main function](steganalysis/main.md) that sequentially runs all these tool-enabled functions on an input file, providing a comprehensive steganalysis report.
 
-Feel free to delve into each provided link to get a more detailed insight into each function ad the tool it uses.
+Feel free to delve into each provided link to get a more detailed insight into each function and the tool it uses.
+
+To get started with StegAnalysis, please follow our [Installation Guide](installation.md) and refer to our [Usage Guide](usage.md) to learn how to use StegAnalysis effectively.

@@ -1,6 +1,8 @@
 site_name: Steganalysis
 nav:
     - Home: index.md
+    - Installation: installation.md
+    - Usage: usage.md
     - Automated Steganalysis:
         - _run_stegsolve: steganalysis/run_stegsolve.md
         - _run_steghide: steganalysis/run_steghide.md
