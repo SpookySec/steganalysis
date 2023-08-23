@@ -1,0 +1,20 @@
+site_name: Steganalysis
+nav:
+    - Home: index.md
+    - Automated Steganalysis:
+        - _run_stegsolve: steganalysis/run_stegsolve.md
+        - _run_steghide: steganalysis/run_steghide.md
+        - _run_zsteg: steganalysis/run_zsteg.md
+        - _run_foremost: steganalysis/run_foremost.md
+        - _run_binwalk: steganalysis/run_binwalk.md
+        - main: steganalysis/main.md
+theme:
+  palette:
+    scheme: slate
+    accent: blue
+  name: material
+  features:
+    - navigation.instant
+    - navigation.expand
+    - navigation.top
+    - navigation.tracking
